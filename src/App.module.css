@@ -1,0 +1,22 @@
+.container {
+  margin: 20px auto auto auto;
+  padding: 20px;
+  width: 500px;
+  background-color: #2f4454;
+}
+
+.container__title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #d4d3d3;
+  text-shadow: 1px 1px 1px #da7b93;
+}
+
+.Contacts__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d4d3d3;
+}

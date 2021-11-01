@@ -1,0 +1,27 @@
+.Filter__text {
+  display: grid;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  color: #d4d3d3;
+}
+
+.Filter__input {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  padding: 3px;
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid rgb(218, 123, 147, 0.5);
+  border-radius: 4px;
+  background-color: #2f4454;
+  resize: none;
+}
+
+.Filter__input:hover,
+.Filter__input:focus {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
