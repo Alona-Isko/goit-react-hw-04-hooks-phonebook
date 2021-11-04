@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
-const useLocalStorage = (key, contacts) => {
-  const [state, setState] = useState(() => {
-    return JSON.parse(window.localStorage.getItem(key)) ?? contacts;
+const useLocalStorage = (contactsList) => {
+  const [contacts, setContacts] = useState(() => {
+    return JSON.parse(window.localStorage.getItem('contacts')) ?? contactsList;
   });
 
   useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(state));
-  }, [key, state]);
+    window.localStorage.setItem(contacts, JSON.stringify('contacts'));
+  }, [contacts]);
 
-  return [state, setState];
+  return [contacts, setContacts];
 };
 
 export default useLocalStorage;
